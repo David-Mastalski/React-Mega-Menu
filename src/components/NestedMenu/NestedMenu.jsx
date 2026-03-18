@@ -7,13 +7,11 @@ function NestedMenu() {
     isNestedMenuActive,
     setIsNestedMenuActive,
     nestedMenuData,
-    setMenuImgURL,
+    menuData,
+    setMenuImgURL
   } = useContext(MenuContext);
 
-  const handleSetImg = (url) => {
-    url && setMenuImgURL(url);
-    return;
-  };
+  const defaultSubmenuImg = menuData?.imgURL;
 
   return (
     <div
@@ -48,10 +46,14 @@ function NestedMenu() {
             <ul>
               {nestedMenuData?.map((item, index) => (
                 <li key={index}>
-                  <a
-                    href={item.url}
-                    className={`menuItem`}
-                    onMouseEnter={() => handleSetImg(item.imgURL)}
+                  <a href={item.url} 
+                    className={`menuItem`}     
+                    onMouseEnter={() =>
+                      setMenuImgURL(item.imgURL || defaultSubmenuImg)
+                    }
+                    onMouseLeave={() =>
+                      setMenuImgURL(defaultSubmenuImg)
+                    }
                   >
                     {item.name}
                   </a>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import styles from "./Menu.module.css";
 import SubMenu from "../SubMenu/SubMenu";
 import data from "../../data/data";
@@ -14,26 +14,57 @@ function Menu() {
     setMenuImgURL
   } = useContext(MenuContext);
 
+  const menuRef = useRef(null);
   const [activeCategory, setActiveCategory] = useState(null);
 
-  const handleSetSubMenu = (category) => {
-    if (category.category === activeCategory) {
-      setIsSubMenuActive(false);
-      setActiveCategory(null);
-      return;
-    }
-
+  const openSubMenu = (category) => {
     setIsSubMenuActive(true);
     setActiveCategory(category.category);
     setMenuData(category);
     setMenuImgURL(category?.imgURL || null);
-    setSubMenuActiveItem(category?.submenu?.[0]?.id);
-    setNestedMenuData(category?.submenu?.[0]?.nestedMenu);
+
+    const firstSub = category?.submenu?.[0];
+
+    setSubMenuActiveItem(firstSub?.id);
+    setNestedMenuData(firstSub?.nestedMenu);
   };
+
+  const closeSubMenu = () => {
+    setIsSubMenuActive(false);
+    setActiveCategory(null);
+  };
+
+  const handleSetSubMenu = (category) => {
+    const isSame = category.category === activeCategory;
+
+    if (isSame) {
+      closeSubMenu();
+      return;
+    }
+
+    openSubMenu(category);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!menuRef.current) return;
+
+      if (!menuRef.current.contains(event.target)) {
+        closeSubMenu();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav
       id="mega-menu"
+      ref={menuRef}
       className={`container ${styles.megaMenu} ${isMenuActive ? styles.active : ""}`}
     >
       <div className={styles.mainMenu}>

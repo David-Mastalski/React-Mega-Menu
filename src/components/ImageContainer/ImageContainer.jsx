@@ -6,7 +6,7 @@ function ImageContainer() {
   const { menuImgURL } = useContext(MenuContext);
 
   return (
-    <div>
+    <div className={styles.subMenuImgCol}>
       <img className={styles.subMenuImg} src={menuImgURL} alt="SubMenu" loading="lazy" />
     </div>
   );

@@ -2,8 +2,7 @@ const data = [
   {
     category: "laptopy",
     name: "Laptopy i Komputery",
-    imgURL:
-      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImE1OThicGoyaXN1ZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.9e47mN1J4-wqW01Az513aOjuIaPKoyi8HC7ShI4kcwk/image;s=3840x0;q=100",
+    imgURL: "/images/computers-laptops.webp",
     submenu: [
       {
         name: "Laptopy",
@@ -12,11 +11,14 @@ const data = [
           {
             name: "Gamingowe",
             url: "",
-            imgURL:
-"https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFhM2JyazVudmhwZy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.rNZt_NQKl22KB-SFZt-DjyhuDEJ4cnyGnI81L7-Ab0o/image;s=3840x0;q=100",
+            imgURL: "/images/gaming-laptops.webp",
           },
-          { name: "Biznesowe", url: "", imgURL: "" },
-          { name: "Ultrabooki", url: "", imgURL: "" },
+          {
+            name: "Biznesowe",
+            url: "",
+            imgURL: "/images/business-laptops.webp",
+          },
+          { name: "Ultrabooki", url: "", imgURL: "/images/ultrabooks.webp" },
         ],
       },
       {
@@ -32,8 +34,7 @@ const data = [
   {
     category: "smartfony",
     name: "Smartfony i Zegarki",
-    imgURL:
-      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFhM2JyazVudmhwZy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.rNZt_NQKl22KB-SFZt-DjyhuDEJ4cnyGnI81L7-Ab0o/image;s=3840x0;q=100",
+    imgURL: "/images/phones-watches.webp",
     submenu: [
       {
         name: "Telefony",
