@@ -1,0 +1,77 @@
+/* .subMenu {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+} */
+/* .subMenu.active {
+  transform: translateX(0%);
+} */
+/* .subMenuMobileImg {
+  background-color: #ededed;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+} */
+/* .subMenuBackBtn {
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+} */
+/* .subMenuContentWrapper, .subMenuCol_1 {
+  height: 100%;
+} */
+/* .subMenuCol_1 {
+  display: flex;
+  flex-direction: column;
+} */
+/* .subMenuContent {
+  flex: 1;
+  padding: 3rem;
+} */
+
+@media (min-width: 768px) {
+  /* .subMenu {
+    border-radius: 0px 0px 8px 8px;
+    border-top: 2px solid #f8f8f8;
+    overflow: hidden;
+    visibility: visible;
+    width: auto;
+    height: 40rem;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(0%);
+    transition: transform 0s;
+
+    display: none;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .subMenu.active {
+    display: flex;
+  }
+  .subMenuMobileImg,
+  .subMenuBackBtn {
+    display: none;
+  }
+  .subMenuContentWrapper {
+    display: flex;
+    flex-direction: row;
+  } */
+  /* .subMenuCol__subMenu {
+    width: 28.5rem;
+  } */
+}
