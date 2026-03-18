@@ -17,54 +17,24 @@ Projekt przedstawia nowoczesne Mega Menu stworzone w React, inspirowane rozwiąz
 </ul>
 
 
-## 🧠 Logika działania
+## Installation 
+Clone this repository to your local computer
+```
+git clone https://github.com/David-Mastalski/Shop.co.git
+```
+Navigate to the application directory
 
-<ol>
-  <li>Hover na kategorię główną</li>
-  <ul>
-    <li>Ustawia aktywną kategorię (activeCategory)</li>
-    <li>Wyświetla przypisane podkategorie)</li>
-  </ul>
-</ol>
-
-
-Ustawia aktywną kategorię (activeCategory)
-
-Wyświetla przypisane podkategorie
-
-Ustawia domyślny obraz dla tej kategorii
-
-Hover na podkategorię
-
-Aktualizuje stan (activeSubCategory)
-
-Zmienia obraz w prawej kolumnie
-
-Zarządzanie stanem
-
-useState do kontrolowania:
-
-aktywnej kategorii
-
-aktywnej podkategorii
-
-aktualnego obrazu
+Open the directory with a code editor such as Visual Studio Code
+```
+npm i
+```
+```
+npm run dev
+```
 
 
 
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
