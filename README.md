@@ -16,6 +16,42 @@ Projekt przedstawia nowoczesne Mega Menu stworzone w React, inspirowane rozwiąz
   <li>Vite</li>
 </ul>
 
+
+## 🧠 Logika działania
+
+<ol>
+  <li>Hover na kategorię główną</li>
+  <ul>
+    <li>Ustawia aktywną kategorię (activeCategory)</li>
+    <li>Wyświetla przypisane podkategorie)</li>
+  </ul>
+</ol>
+
+
+Ustawia aktywną kategorię (activeCategory)
+
+Wyświetla przypisane podkategorie
+
+Ustawia domyślny obraz dla tej kategorii
+
+Hover na podkategorię
+
+Aktualizuje stan (activeSubCategory)
+
+Zmienia obraz w prawej kolumnie
+
+Zarządzanie stanem
+
+useState do kontrolowania:
+
+aktywnej kategorii
+
+aktywnej podkategorii
+
+aktualnego obrazu
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
