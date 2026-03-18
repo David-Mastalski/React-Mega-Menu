@@ -22,6 +22,7 @@ npm i
 ```
 npm run dev
 ```
+<img width="1920" height="1080" alt="Zrzut ekranu (1)" src="https://github.com/David-Mastalski/React-Mega-Menu/blob/main/public/images/business-laptops.webp" />
 
 
 
