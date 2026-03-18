@@ -20,7 +20,8 @@ Projekt przedstawia nowoczesne Mega Menu stworzone w React, inspirowane rozwiąz
 ## Installation 
 Clone this repository to your local computer
 ```
-git clone https://github.com/David-Mastalski/Shop.co.git
+git clone https://github.com/David-Mastalski/React-Mega-Menu.git
+
 ```
 Navigate to the application directory
 
