@@ -10,18 +10,11 @@ Projekt przedstawia nowoczesne Mega Menu stworzone w React, inspirowane rozwiąz
 ## 🛠️ Technologie
 
 <ul>
-  <li>
-    React
-  </li>
+  <li>React</li>
+  <li>JavaScript (ES6+)</li>
+  <li>CSS</li>
+  <li>Vite</li>
 </ul>
-<p>React</p>
-<p>JavaScript (ES6+)</p>
-
-
-CSS / SCSS (lub inne rozwiązanie stylingowe – do uzupełnienia)
-
-Vite / Create React App (do uzupełnienia)
-
 
 # React + Vite
 
