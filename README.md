@@ -4,7 +4,18 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Projekt przedstawia nowoczesne Mega Menu stworzone w React, inspirowane rozwiązaniami stosowanymi w sklepach e-commerce. Menu oferuje dynamiczną nawigację oraz interaktywną zmianę treści wizualnej w zależności od wyboru użytkownika.
+Projekt przedstawia nowoczesne Mega Menu stworzone w React, inspirowane rozwiązaniami stosowanymi w sklepach internetowych. Umożliwia wygodne i szybkie poruszanie się po kategoriach, a także dynamicznie zmienia wyświetlane treści wizualne w zależności od wybranej opcji przez użytkownika.
+
+
+## 🛠️ Technologie
+
+<p>React</p>
+<p>JavaScript (ES6+)</p>
+
+
+CSS / SCSS (lub inne rozwiązanie stylingowe – do uzupełnienia)
+
+Vite / Create React App (do uzupełnienia)
 
 
 # React + Vite
