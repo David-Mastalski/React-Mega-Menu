@@ -1,5 +1,6 @@
 .megaMenu {
-  padding: 3rem;
+  /* padding: 3rem; */
+  padding: 3rem 3rem 0;
   background-color: #fff;
   color: #000;
   width: 100%;
@@ -9,6 +10,9 @@
   height: calc(100dvh - 60px);
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .megaMenu.active {
   transform: translateX(0%);
@@ -30,6 +34,7 @@
     height: auto;
     transition: transform 0s;
     transform: translateX(0%);
+    overflow: visible;
   }
   .menuHeading,
   .mainMenuItem svg {

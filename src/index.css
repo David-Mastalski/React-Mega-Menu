@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
+:root{
+  --accent-color: #941045;
+  --accent-color-hover: #660e31;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -79,7 +85,22 @@ ul {
 .subMenuMobilePage .subMenuContent {
   flex: 1;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
+.subMenuMobilePage .subMenuContent ul {
+  flex: 1;
+}
+.seeAllBtn {
+  background-color: var(--accent-color);
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: .7rem 1.6rem;
+  min-height: 4rem;
+  transition: background-color .3s ease-in-out;
+}
+
 .subMenuMobilePage .subMenuBackBtn {
   font-size: 1.2rem;
   font-weight: 300;
@@ -106,7 +127,7 @@ ul {
   }
   .menuItem[aria-expanded="true"],
   .menuItem:hover {
-    color: #941045;
+    color: var(--accent-color);
   }
   .subMenuMobilePage {
     position: relative;
@@ -141,6 +162,9 @@ ul {
   }
   .subMenuCol--nestedMenu {
     width: 27rem;
+  }
+  .seeAllBtn:hover {
+    background-color: var(--accent-color-hover);
   }
 }
 @media (min-width: 1400px) {

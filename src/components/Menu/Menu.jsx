@@ -26,7 +26,8 @@ function Menu() {
     const firstSub = category?.submenu?.[0];
 
     setSubMenuActiveItem(firstSub?.id);
-    setNestedMenuData(firstSub?.nestedMenu);
+    setNestedMenuData(firstSub);
+    // setNestedMenuData(firstSub?.nestedMenu);
   };
 
   const closeSubMenu = () => {

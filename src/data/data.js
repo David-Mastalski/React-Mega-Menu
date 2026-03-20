@@ -3,10 +3,12 @@ const data = [
     category: "laptopy",
     name: "Laptopy i Komputery",
     imgURL: "/images/computers-laptops.webp",
+    seeAll: "#",
     submenu: [
       {
         name: "Laptopy",
         id: "laptopy-main",
+        seeAll: "#",
         nestedMenu: [
           {
             name: "Gamingowe",
@@ -24,6 +26,7 @@ const data = [
       {
         name: "Podzespoły",
         id: "podzespoly",
+        seeAll: "#",
         nestedMenu: [
           { name: "Karty graficzne", url: "" },
           { name: "Procesory", url: "" },
@@ -69,10 +72,12 @@ const data = [
   {
     category: "rtv",
     name: "Telewizory i Audio",
+    seeAll: "#",
     submenu: [
       {
         name: "Telewizory",
         id: "telewizory",
+        seeAll: "#",
         nestedMenu: [
           { name: "OLED", url: "" },
           { name: "QLED", url: "" },
@@ -82,6 +87,7 @@ const data = [
       {
         name: "Audio",
         id: "audio",
+        seeAll: "#",
         nestedMenu: [
           { name: "Soundbary", url: "" },
           { name: "Głośniki BT", url: "" },
@@ -90,6 +96,7 @@ const data = [
       {
         name: "Słuchawki",
         id: "sluchawki",
+        seeAll: "#",
         nestedMenu: [
           { name: "Bezprzewodowe", url: "" },
           { name: "Douszne", url: "" },
@@ -98,6 +105,7 @@ const data = [
       {
         name: "Kino Domowe",
         id: "kino-domowe",
+        seeAll: "#",
         nestedMenu: [
           { name: "Amplitunery", url: "" },
           { name: "Zestawy kolumn", url: "" },

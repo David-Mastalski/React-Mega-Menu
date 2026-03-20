@@ -44,7 +44,7 @@ function NestedMenu() {
           </div>
           <div className={`subMenuContent`}>
             <ul>
-              {nestedMenuData?.map((item, index) => (
+              {nestedMenuData.nestedMenu?.map((item, index) => (
                 <li key={index}>
                   <a href={item.url} 
                     className={`menuItem`}     
@@ -60,6 +60,8 @@ function NestedMenu() {
                 </li>
               ))}
             </ul>
+
+            {nestedMenuData.seeAll && <button className={`seeAllBtn ${styles["seeAllBtn-nested"]}`}>Zobacz wszystkie</button> }
           </div>
         </div>
       </div>

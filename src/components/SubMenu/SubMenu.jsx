@@ -18,7 +18,7 @@ function SubMenu() {
 
   const handleSetNestedMenu = (data) => {
     setIsNestedMenuActive(true);
-    setNestedMenuData(data.nestedMenu);
+    setNestedMenuData(data);
     setSubMenuActiveItem(data.id);
   };
 
@@ -81,6 +81,8 @@ function SubMenu() {
                 </li>
               ))}
             </ul>
+
+            {menuData.seeAll && <button className="seeAllBtn">Zobacz wszystkie</button> }
           </div>
         </div>
       </div>
